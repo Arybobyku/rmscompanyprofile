@@ -305,34 +305,34 @@ https://www.tooplate.com/view/2095-level
             var map = '';
             var center;
 
-            function initialize() {
-                var mapOptions = {
-                    zoom: 13,
-                    center: new google.maps.LatLng(-23.013104,-43.394365),
-                    scrollwheel: false
-                };
+            // function initialize() {
+            //     var mapOptions = {
+            //         zoom: 13,
+            //         center: new google.maps.LatLng(-23.013104,-43.394365),
+            //         scrollwheel: false
+            //     };
 
-                map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
+            //     map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
 
-                google.maps.event.addDomListener(map, 'idle', function() {
-                  calculateCenter();
-              });
+            //     google.maps.event.addDomListener(map, 'idle', function() {
+            //       calculateCenter();
+            //   });
 
-                google.maps.event.addDomListener(window, 'resize', function() {
-                  map.setCenter(center);
-              });
-            }
+            //     google.maps.event.addDomListener(window, 'resize', function() {
+            //       map.setCenter(center);
+            //   });
+            // }
 
-            function calculateCenter() {
-                center = map.getCenter();
-            }
+            // function calculateCenter() {
+            //     center = map.getCenter();
+            // }
 
-            function loadGoogleMap(){
-                var script = document.createElement('script');
-                script.type = 'text/javascript';
-                script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDVWt4rJfibfsEDvcuaChUaZRS5NXey1Cs&v=3.exp&sensor=false&' + 'callback=initialize';
-                document.body.appendChild(script);
-            } 
+            // function loadGoogleMap(){
+            //     var script = document.createElement('script');
+            //     script.type = 'text/javascript';
+            //     script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDVWt4rJfibfsEDvcuaChUaZRS5NXey1Cs&v=3.exp&sensor=false&' + 'callback=initialize';
+            //     document.body.appendChild(script);
+            // } 
 
             function setCarousel() {
                 
@@ -401,7 +401,7 @@ https://www.tooplate.com/view/2095-level
                 });      
 
                 // Google Map
-                loadGoogleMap();  
+                // loadGoogleMap();  
 
                 // Date Picker
                 const pickerCheckIn = datepicker('#inputCheckIn');
